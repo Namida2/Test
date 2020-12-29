@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/card_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/numberRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="31.5dp"
+        android:background="@drawable/card_text_bg"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat"
+        android:text="6430"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/timeBeginEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/nameSubject"
+        android:layout_marginStart="31.5dp"
+        android:background="@drawable/card_text_bg"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="8:30-940"
+        android:textAlignment="center"
+
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/nameSubject"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numberRoom"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_bg"
+        android:elevation="5dp"
+        android:fontFamily="@font/montserrat"
+        android:onClick="onButtonClick"
+        android:padding="8dp"
+        android:text="Прикладное программирование"
+        android:textAllCaps="false"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

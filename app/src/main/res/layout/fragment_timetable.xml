@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Timetable">
+
+
+     <com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager
+         android:id="@+id/main"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:foregroundGravity="center"
+         android:clipToPadding="false"
+         android:overScrollMode="never"
+         app:icvp_scroll_duration="370"
+         android:layout_below="@+id/tool"
+         app:icvp_interpolator="@android:anim/overshoot_interpolator">
+
+     </com.gigamole.infinitecycleviewpager.HorizontalInfiniteCycleViewPager>
+
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Timetable</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="group">
+
+    </string-array>
+
+    <string-array name="monday">
+        <item>Прикладное программирование</item>
+        <item>Основы экономики</item>
+        <item>WEB-дизайн</item>
+    </string-array>
+
+    <string-array name="tuesday">
+        <item>Теория вероятностей</item>
+        <item>Физ-ра</item>
+        <item>Компьютерная графика</item>
+    </string-array>
+
+</resources>

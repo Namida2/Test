@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_navigation"
+    app:startDestination="@id/timetable2">
+
+    <fragment
+        android:id="@+id/timetable2"
+        android:name="com.example.test.Timetable"
+        android:label="fragment_timetable"
+        tools:layout="@layout/fragment_timetable" >
+        <action
+            android:id="@+id/action_timetable2_to_teachers2"
+            app:destination="@id/teachers2"
+            app:enterAnim="@anim/fragment_close_enter" />
+        <action
+            android:id="@+id/action_timetable2_to_notes"
+            app:destination="@id/notes"
+            app:enterAnim="@anim/fragment_close_enter" />
+    </fragment>
+    <fragment
+        android:id="@+id/teachers2"
+        android:name="com.example.test.Teachers"
+        android:label="fragment_teachers"
+        tools:layout="@layout/fragment_teachers" >
+        <action
+            android:id="@+id/action_teachers2_to_timetable2"
+            app:destination="@id/timetable2"
+            app:enterAnim="@anim/fragment_close_enter" />
+    </fragment>
+    <fragment
+        android:id="@+id/notes"
+        android:name="com.example.test.Notes"
+        android:label="fragment_notes"
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/action_notes_to_timetable2"
+            app:destination="@id/timetable2"
+            app:enterAnim="@anim/fragment_close_enter" />
+    </fragment>
+</navigation>

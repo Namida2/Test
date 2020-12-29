@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:elevation="2dp"
+        android:background="@android:color/white" >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_row_vec"
+                android:background="@drawable/back_row_vec"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="2dp"
+                android:layout_centerVertical="true"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="Преподаватель"
+                android:layout_toRightOf="@id/back"
+                app:titleTextColor="#3F414E">
+
+            </androidx.appcompat.widget.Toolbar>
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <ScrollView
+        android:layout_below="@id/toolTeacher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_bg"
+        android:clickable="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/nameTeacher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Григорьев сергей Александровичдович"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18dp" />
+
+            <View
+                android:layout_below="@id/nameTeacher"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/card_bg"
+                android:textSize="16dp"/>
+
+
+            <ImageView
+                android:id="@+id/imPhone"
+                android:layout_below="@id/nameTeacher"
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:src="@drawable/phone"/>
+
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameTeacher"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/montserrat"
+                android:text="+7(904)3775776"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/imMail"
+                android:layout_below="@id/imPhone"
+                android:layout_marginStart="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/mail"/>
+
+            <TextView
+                android:id="@+id/mail"
+                android:layout_below="@id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="trusov.an@kemerovorea.ru"
+                android:textColor="@android:color/black"
+                android:textSize="16dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/montserrat"
+                />
+
+            <TextView
+                android:id="@+id/ex"
+                android:layout_below="@id/mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/montserrat"
+                android:text="Науч. пед. стаж:"
+                android:textSize="16dp"
+                android:paddingBottom="8dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/exp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mail"
+                android:layout_marginEnd="8dp"
+                android:layout_toRightOf="@id/ex"
+                android:fontFamily="@font/montserrat"
+                android:paddingBottom="16dp"
+                android:textSize="16dp"
+                android:text="18 лет 10 месяцев"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="8dp"/>
+
+            <TextView
+                android:id="@+id/q"
+                android:layout_below="@id/exp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/montserrat"
+                android:text="Квалификация:"
+                android:paddingBottom="8dp"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/quf"
+                android:layout_below="@id/q"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textSize="16dp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/montserrat"
+                android:text="Педагог дополнительного образования детей в области технического творчества с дополнительной подготовкой по радиоэлектронике и компьютерным технологиям;
+    Бакалавр."
+                android:paddingBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_below="@id/quf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/montserrat"
+                android:text="Преподаваемы дисцеплины:"
+                android:paddingBottom="8dp"
+                android:textSize="16dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/subjects"
+                android:layout_below="@id/txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/montserrat"
+                android:textSize="16dp"
+                android:text="Информационные технологии в профессиональной деятельности
+    Адаптивные информационные технологии в профессиональной деятельности
+    Основы обработки экономической информации
+    Основы теории информации
+    Выполнение работ по профессии"/>
+
+            <Button
+                android:id="@+id/call"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/subjects"
+                android:layout_marginTop="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="14dp"
+                android:textColor="@color/startCardViewColor"
+                android:background="@drawable/button_phone"
+                android:text="Позвонить"/>
+
+            <Button
+                android:id="@+id/write"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/call"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:textSize="14dp"
+                android:textColor="@color/startCardViewColor"
+                android:background="@drawable/button_phone"
+                android:text="Написать на почту"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

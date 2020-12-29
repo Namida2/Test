@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:elevation="2dp"
+        android:background="@android:color/white" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/myTool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleTextColor="@android:color/black"
+                app:menu="@menu/edit_timetable_menu">
+                <ImageView
+                    android:id="@+id/menu"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/menu"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="16dp"
+                    />
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Раписание"
+                    android:textColor="@android:color/black"
+                    android:textSize="18dp" />
+
+            </androidx.appcompat.widget.Toolbar>
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="32dp"
+        android:elevation="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="@android:color/white"
+        android:layout_marginBottom="16dp">
+        <com.ismaeldivita.chipnavigation.ChipNavigationBar
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="90dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            app:cnb_menuResource="@menu/menu"
+            android:layout_alignParentBottom="true"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom"
+        android:layout_below="@id/appBar">
+
+        <FrameLayout
+            android:id="@+id/fragmentForTimetable"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom"
+            />
+
+    </FrameLayout>
+
+</RelativeLayout >

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    android:paddingBottom="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:id="@+id/clickableTeachersRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/nameTeacher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Григорьев сергей Александровичдович"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18dp" />
+
+        <View
+            android:layout_below="@id/nameTeacher"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/card_bg"/>
+
+
+        <ImageView
+            android:id="@+id/imPhone"
+            android:layout_below="@id/nameTeacher"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/phone"/>
+
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameTeacher"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/montserrat"
+            android:text="+7(904)3775776"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"/>
+
+        <ImageView
+            android:id="@+id/imMail"
+            android:layout_below="@id/imPhone"
+            android:layout_marginStart="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/mail"/>
+
+
+        <TextView
+            android:id="@+id/mail"
+            android:layout_below="@id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="trusov.an@kemerovorea.ru"
+            android:textColor="@android:color/black"
+            android:textSize="16dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/montserrat"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

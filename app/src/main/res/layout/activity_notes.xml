@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotesActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/tool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:elevation="2dp"
+        android:background="@android:color/white" >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_row_vec"
+                android:background="@drawable/back_row_vec"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="2dp"
+                android:layout_centerVertical="true"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="Notes"
+                android:layout_toRightOf="@id/back"
+                app:titleTextColor="#3F414E">
+
+            </androidx.appcompat.widget.Toolbar>
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ListView
+        android:paddingTop="16dp"
+        android:layout_marginTop="8dp"
+        android:id="@+id/listViewForNotes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tool"
+        android:scrollbars="none"
+        android:divider="@null"
+        android:dividerHeight="24dp"
+        android:clipToPadding="false">
+    </ListView>
+
+
+
+</RelativeLayout>
